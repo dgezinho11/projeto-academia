@@ -34,9 +34,9 @@ header {
 
 .menu-content {
     text-transform: uppercase;
-    width: 100%;
+    width: 96%;
     height: 100%;
-    padding: 10px;
+    padding: 30px;
     
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ header {
 }
 
 .menu-content .list-itens a:hover::before {
-    width: 100%;
+    width: 96%;
 }
 
    /* Centro - Conteudo Principal */
@@ -93,7 +93,7 @@ main {
 }
 
 .main-content {
-    margin-top: 7%;
+    margin-top: 1%;
 }
 
 .primary-text {
