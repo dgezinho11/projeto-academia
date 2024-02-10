@@ -21,7 +21,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-position-y: 0px;
+    background-attachment: fixed;
+    
+    width: 100%;
+    height: 100%;
 }
 
      /* Menu-Header-NavBar */
@@ -93,7 +96,7 @@ main {
 }
 
 .main-content {
-    margin-top: 1%;
+    margin-top: 1%;    
 }
 
 .primary-text {
@@ -116,7 +119,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 20px;   
  }
 
  .btns button {
@@ -149,5 +152,9 @@ main {
 
  .btns button:hover:before {
     width: 100%;
+}
+
+.btn-personal {
+    margin-bottom: 50px;
 }
 
