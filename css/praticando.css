@@ -34,7 +34,7 @@ header {
 
 .menu-content {
     text-transform: uppercase;
-    width: 96%;
+    width: 100%;
     height: 100%;
     padding: 30px;
     
@@ -114,7 +114,8 @@ main {
 
  .btns {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
  }
 
