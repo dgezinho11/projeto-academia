@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+* {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+
+.titulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	margin: 50px 0;
+	border: 3px solid tomato;
+	background-image: linear-gradient(to left, #fff, #d5f518 );
+	color: violet;
+}
+
+.subt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 30px 10px;
+	border: 2px solid #ffbf4763;
+	background-image: linear-gradient(to left, #b59696b0, #d5f518 );
+	color: rgb(201, 40, 201);
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	margin-bottom: 100px;					
+}
+
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;	
+}
+
+.container {		
+	border: 1px solid #ccc;
+	
+}
+
+.grid {
+	max-width: 500px;
+	margin: 0 auto;
+	border: 1px solid #ccc;	
+}
+
+    
+      /* PRATICANDO #1 */
+
+nav {
+	background-color: tomato;
+	color: #fff;
+	font-size: 1.5rem;				
+	max-width: 100vw;
+	
+	display: flex;			
+	justify-content: space-between;
+	padding: 10px;
+}		
+
+ul {
+	list-style: none;			
+	font-size: 0.7em;
+
+	display: flex;
+	align-items: center;			
+	gap: 20px;
+	margin-right: 20px;	
+}	
+
+a.botao {
+	background-color: red;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	border-radius: 8px;
+	text-decoration: none;
+	padding: 5px;			
+}
+
+.logo1 {
+	color: black;
+	font-weight: 900;
+	font-size: 1.5rem;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* --------------------------------------- */
+    
+             /* PRATICANDO #2 */
+
+.container {	
+
+display: grid;
+
+/* grid-template-columns: 100px 100px 100px 100px; */
+
+/* grid-template-columns: 2fr 1fr 1fr 1fr; */
+
+/* grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr); */
+
+/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+
+/* grid-template-columns: repeat(4, minmax(0, 1fr)); */
+
+/* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+
+/* grid-template-rows: 50px 200px auto; */
+/* grid-auto-rows: 30px; */
+	
+}
+
+
+    /* PRATICANDO #3 */
+
+/* Grid */
+
+.grid {
+	display: grid;
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.content {
+	grid-area: content;
+}
+
+.sidenav {
+	grid-area: sidenav;
+}
+
+.advert {
+	grid-area: advert;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.principal {
+	grid-area: principal;
+}
+
+
+.grid-template-areas-1 {	
+	grid-template-areas:
+		"logo nav nav"
+		"sidenav content advert"
+		"sidenav footer footer"
+		;
+}
+
+
+.grid-template-areas-2 {
+	grid-template-areas:
+		"sidenav logo nav"
+		"sidenav content advert"
+		"sidenav content footer"
+		;
+}
+
+
+.grid-template-areas-3 {
+	grid-template-areas:
+		"logo logo"
+		"nav nav"
+		"content content"
+		"sidenav advert"
+		"footer footer"
+		;
+}
+
+
+.grid-template-areas-4 {
+	grid-template-columns: 30% 60% 10%;
+	grid-template-rows: 50px 150px 50px;
+	grid-template-areas:
+		"logo nav nav"
+		"sidenav content advert"
+		"sidenav footer footer"
+		;
+}
+
+
+.grid-template-areas-5 {
+	grid-template-areas:
+		"logo content nav"
+		". content advert"
+		"sidenav footer ."
+		;
+}
+
+
+     /* PRATICANDO #4 (Faz parte do #3) */
+
+	 
+	
+	.grid-template-2 {
+		grid-template:
+			"logo nav nav" 50px 
+			"sidenav content advert" 150px
+			"sidenav footer footer" 100px
+			/ 100px 1fr 50px;		
+	}
+
+	.praticando {		
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+
+		min-width: 80%;
+		min-height: 200px;
+		border: 1px solid #ccc;
+		margin-left: 100px;
+		margin-right: 100px;
+	}	
+
+	.grid-template-1 {
+		display: grid;
+		grid-template: 50px 1fr / 100px 1fr 100px;
+
+		margin: 0 auto;
+	}
+
+	.praticando1 {
+		text-align: center;
+		line-height: 30px;
+	}
+
+	    /* PRATICANDO #5 */
+
+	/* Grid */
+
+	.grid {
+		display: grid;
+	}
+
+	.grid-template {
+		grid-template:
+			"logo nav nav" 50px
+			"sidenav content advert" 150px
+			"sidenav footer footer" 100px
+			/ 100px 1fr 50px;
+	}
+
+	.logo {
+		grid-area: logo;
+	}
+	
+	.nav {
+		grid-area: nav;
+	}
+	
+	.content {
+		grid-area: content;
+	}
+	
+	.sidenav {
+		grid-area: sidenav;
+	}
+	
+	.advert {
+		grid-area: advert;
+	}
+	
+	.footer {
+		grid-area: footer;
+	}
+	
+	.gap {
+		gap: 20px;
+	}
+
+	.column-gap {
+		gap: 2px;
+		column-gap: 20px;
+	}
+
+	.row-gap {
+		gap: 2px;
+		row-gap: 20px;
+	}
+
+	.margin {
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-bottom: 50px;
+	}
+
+
+	    /* PRATICANDO #6 */
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: 100px;
+		}
+
+		.grid-area-1 .item-1 {
+			grid-area: 1 / 2 / 4 / 3;
+			grid-row-start: 1;
+			grid-column-start: 2;
+			grid-row-end: 4;
+			grid-column-end: 3;
+		}
